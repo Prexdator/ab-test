@@ -1,0 +1,23 @@
+{block content}
+
+
+<div class="container gap-30">
+    <div class="flex flex-row center">
+        <h1 n:block=title>Importování CSV dat a jejich zobrazení</h1>
+    </div>
+
+    <div class="flex flex-row center gap-30">
+        <button class="button bounce_button" onclick="createTable()" data-toggle="modal" data-target="#statusModal">Smazat a vytvořit tabulku
+        </button>
+        <button class="button bounce_button" onclick="importFetch('csv')" data-toggle="modal" data-target="#statusModal">Importovat
+            CSV data
+        </button>
+        <button class="button bounce_button"  onclick="showData()">Zobrazit data</button>
+    </div>
+
+
+    <table border="1" id="tableData">
+
+    </table>
+
+</div>

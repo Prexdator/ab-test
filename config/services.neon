@@ -1,0 +1,11 @@
+services:
+	- App\Router\RouterFactory::createRouter
+	- App\Models\Import\ImportRepository
+	- App\Models\Home\HomeRepository
+
+
+search:
+	-	in: %appDir%
+		classes:
+			- *Factory
+			- *Facade
